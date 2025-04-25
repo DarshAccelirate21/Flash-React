@@ -1,6 +1,6 @@
 // Login.jsx
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // import "./authstyle.css"; // assuming your CSS is here
 import { Eye, EyeOff } from "lucide-react"; // or any icon library you use
 
@@ -87,9 +87,9 @@ const Login = () => {
           <div className="form-link">
             <span>
               Don't have an account?{" "}
-              <a href="/auth/signup" className="link signup-link">
+              <Link to="/auth/signup" className="link signup-link">
                 Signup
-              </a>
+              </Link>
             </span>
           </div>
         </div>
